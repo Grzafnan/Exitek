@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
   return (
-    <div className="p-10 mx-auto w-3/4 md:px-6 lg:px-8 lg:py-8 rounded-[32px] -mt-20 bg-white shadow-2xl">
+    <div className="p-10 mx-auto w-5/6 md:w-3/4 md:px-6 lg:px-8 lg:py-8 rounded-[32px] -mt-20 bg-white shadow-2xl">
       <div className=" grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-2 md:justify-center lg:items-start md:items-center">
           <div className="mb-1  flex justify-start w-10 h-10 rounded-full sm:w-12 sm:h-12">

@@ -76,7 +76,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className=" inline-flex items-center justify-center h-10 px-6 tracking-wide text-primary hover:text-white transition duration-200 rounded-2xl shadow-md bg-white hover:bg-secondary focus:shadow-outline focus:outline-none"
+                className=" inline-flex items-center justify-center h-10 px-6 tracking-wide text-primary hover:text-white transition duration-200 rounded-full shadow-md bg-white hover:bg-secondary focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
