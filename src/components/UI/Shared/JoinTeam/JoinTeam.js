@@ -7,7 +7,7 @@ const JoinTeam = () => {
       style={{ backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.87) 100%), url(${teamMeting?.src})`, }}
     >
       <div className='md:w-2/4 mx-auto flex flex-col justify-center items-center space-y-10'>
-        <div className='flex flex-col justify-center items-center space-y-2 px-4'>
+        <div className='flex flex-col justify-center items-center space-y-2 px-4 md:px-0'>
           <h1 className="text-4xl md:text-6xl text-white font-semibold leading-[3rem] md:leading-[5rem]">Join our team</h1>
           <p className="text-gray text-center leading-6 md:leading-8">We extend a warm invitation to talented individuals like you to become an integral part of our vibrant and forward-thinking team.</p>
         </div>
