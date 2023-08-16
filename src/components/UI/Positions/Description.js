@@ -1,6 +1,6 @@
 const Description = () => {
   return (
-    <article className='bg-deep-white text-primary my-10 px-6 md:px-48'>
+    <article className=' bg-deep-white text-primary my-10 px-6 md:px-24 lg:px-48'>
       <p className='mb-10'>
         Short description what is junior ios developer BP Mobile is an industry-leading company that develops and publishes mobile-first products using cutting-edge innovations. Our top apps include iScanner, FindMe, Second Phone Number, and Smart Cleaner.
       </p>

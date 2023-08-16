@@ -26,7 +26,7 @@ const positions = [
 
 const OpenPositions = () => {
   return (
-    <section className='py-20 px-6'>
+    <section id='position' className='py-20 px-6'>
       <h2 className="text-4xl text-center text-primary font-extrabold mb-20 ">Open positions</h2>
       <div className='flex flex-col gap-8'>
         {

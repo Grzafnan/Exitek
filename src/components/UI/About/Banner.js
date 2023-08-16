@@ -5,8 +5,7 @@ const Banner = () => {
   return (
     <section>
       <div
-        className='w-full bg-[#F7F7FC] max-w-[1440px] mx-auto min-h-[700px]'
-        style={{ background: `linear-gradient(35deg, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 1) 70%, rgba( 34, 28, 91, 90) 100%` }}
+        className='w-full bg-[#F7F7FC] max-w-[1440px] mx-auto min-h-[700px] bg-gradient-to-br from-primary from-10% via-[] via-70% to-[#221C5B] to-100'
       >
         <div className="w-11/12 md:w-3/4 mx-auto text-center pt-10">
           <h1 className="text-4xl md:text-[56px] text-white font-semibold leading-[3rem] md:leading-[5rem]">
