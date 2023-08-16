@@ -47,7 +47,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <Image className='-mt-10 mx-auto px-6 md:px-0 lg:-mt-72 lg:ml-16' alt='about-us' src={aboutUs.src} width={600} height={430} />
+      <Image className='-mt-10 mx-auto px-6 md:px-0 lg:-mt-72 lg:ml-16' draggable={false} alt='about-us' src={aboutUs.src} width={600} height={430} />
     </section>
   );
 };

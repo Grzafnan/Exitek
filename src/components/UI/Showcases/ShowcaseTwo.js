@@ -10,7 +10,7 @@ const ShowcaseTwo = ({ title, image, des }) => {
           <p className='text-[#4E4B66] mt-1 md:text-justify'>{des}</p>
         </div>
         <div className='w-full flex justify-center md:justify-end'>
-          <Image alt='showcase-image' src={image?.src} width={400} height={600} />
+          <Image draggable={false} alt='showcase-image' src={image?.src} width={400} height={600} />
         </div>
       </div>
     </div>
