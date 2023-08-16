@@ -37,7 +37,7 @@ const Works = () => {
                 {work?.icon}
               </div>
 
-              <p className="font-extrabold text-2xl text-primary">{work?.title}</p>
+              <h2 className="font-extrabold text-2xl text-primary">{work?.title}</h2>
               <p className=" text-lg text-gray font-normal leading-7">
                 {work?.des}
               </p>
