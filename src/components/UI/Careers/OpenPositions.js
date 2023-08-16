@@ -37,11 +37,11 @@ const OpenPositions = () => {
                 <p className="flex space-x-4  text-lg text-gray font-normal leading-7">
                   <span className='flex items-center gap-1'>
                     <LocationIcon />
-                    <span className='text-sm'>100% Remote</span>
+                    <span className='text-sm'>{position.location}</span>
                   </span>
                   <span className='flex items-center gap-1'>
                     <ClockIcon />
-                    <span className='text-sm'>Full-time</span>
+                    <span className='text-sm'>{position.type}</span>
                   </span>
                 </p>
               </div>
