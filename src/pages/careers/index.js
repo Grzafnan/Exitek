@@ -26,13 +26,13 @@ Careers.getLayout = function getLayout(page) {
 };
 
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch(`${process.env.CLIENT_URL}/api/jobs?collection=jobs`);
   const data = await res.json();
   return {
     props: {
       jobs: data.data
     },
-    // revalidate: 10
+    revalidate: 60
   }
 }
