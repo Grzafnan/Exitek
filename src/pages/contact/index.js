@@ -1,3 +1,4 @@
+import RootLayout from '@/components/Layouts/RootLayout';
 import MessageIcon from '@/components/icons/MessageIcon';
 import RightArrowIcon from '@/components/icons/RightArrowIcon';
 import React from 'react';
@@ -16,12 +17,12 @@ const Contact = () => {
             Got a question about Exitek? Let us know.
           </p>
         </div>
-        <div class="w-full">
-          <form class="form relative">
+        <div className="w-full">
+          <form className="form relative">
             <span className='absolute  ml-6 mt-[14px]'>
               <MessageIcon />
             </span>
-            <input type="email" class="w-full bg-primary text-white text-sm px-14 py-4 rounded-full outline-none border border-primary focus:border-secondary" placeholder="Email" required />
+            <input type="email" className="w-full bg-primary text-white text-sm px-14 py-4 rounded-full outline-none border border-primary focus:border-secondary" placeholder="Email" required />
             <button type='submit' className='absolute cursor-pointer -ml-16 mt-[10px]'>
               <RightArrowIcon />
             </button>
@@ -33,3 +34,8 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+Contact.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>
+};

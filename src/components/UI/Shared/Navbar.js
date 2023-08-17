@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`${scrollNavbar ? "bg-deep-white text-primary" : "bg-transparent text-gray"} w-full  top-0 sticky h-[76px] z-50 duration-300 ease-in-out`}>
+    <header className={`${scrollNavbar ? "bg-deep-white text-primary" : "bg-transparent text-gray"} font-medium w-full  top-0 sticky h-[76px] z-50 duration-200 ease-in-out`}>
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link
@@ -32,7 +32,7 @@ const Navbar = () => {
             title="Company"
             className="inline-flex items-center"
           >
-            <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+            <span className={`text-2xl font-bold tracking-wide uppercase ${scrollNavbar ? "text-primary" : "text-white"}`}>
               Exitek
             </span>
           </Link>
@@ -93,7 +93,7 @@ const Navbar = () => {
               aria-label="Open Menu"
               title="Open Menu"
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-              onClick={() => setIsMenuOpen(true)}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg className={`w-5 ${scrollNavbar ? "text-primary" : "text-white"}`} viewBox="0 0 24 24">
                 <path
@@ -121,7 +121,7 @@ const Navbar = () => {
                         title="Company"
                         className="inline-flex items-center"
                       >
-                        <span className="text-xl font-bold tracking-wide uppercase">
+                        <span className="text-2xl font-bold text-primary tracking-wide uppercase">
                           Exitek
                         </span>
                       </Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
                         aria-label="Close Menu"
                         title="Close Menu"
                         className="p-2 -mt-2 -mr-2 transition duration-200 rounded bg-red-500 hover:bg-secondary focus:bg-secondary focus:outline-none focus:shadow-outline"
-                        onClick={() => setIsMenuOpen(false)}
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                       >
                         <svg className="w-5 text-white" viewBox="0 0 24 24">
                           <path
@@ -187,7 +187,7 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 tracking-wide text-primary transition duration-200 rounded-xl shadow-md bg-white hover:bg-secondary border border-secondary focus:shadow-outline focus:outline-none"
+                          className="inline-flex items-center justify-center w-full h-12 px-6 tracking-wide text-primary transition duration-200 rounded-xl shadow-md bg-white hover:text-white hover:bg-secondary border border-secondary focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >

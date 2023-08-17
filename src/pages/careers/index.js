@@ -1,8 +1,9 @@
+import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Careers/Banner";
 import Offers from "@/components/UI/Careers/Offers";
 import OpenPositions from "@/components/UI/Careers/OpenPositions";
 
-const index = () => {
+const Careers = () => {
   return (
     <div className="">
       <Banner />
@@ -12,4 +13,8 @@ const index = () => {
   );
 };
 
-export default index;
+export default Careers;
+
+Careers.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>
+};
