@@ -4,9 +4,9 @@ import React from 'react';
 const Banner = () => {
   return (
     <section
-      className='w-full min-h-[450px]  bg-gradient-to-br from-primary from-10% via-[] via-70% to-[#221C5B] to-100%'
+      className='-mt-[76px] w-full min-h-[526px]  bg-gradient-to-br from-primary from-10% via-[] via-70% to-[#221C5B] to-100%'
     >
-      <div className="w-11/12 md:w-3/4 mx-auto flex flex-col gap-6  items-center pt-10">
+      <div className="pt-36 w-11/12 md:w-3/4 mx-auto flex flex-col gap-6  items-center">
         <h1 className="text-4xl md:text-[56px] text-white text-center font-semibold leading-[3rem] md:leading-[5rem]">
           Be part of our mission
         </h1>

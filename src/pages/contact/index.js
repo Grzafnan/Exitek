@@ -5,7 +5,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <section
-      className='w-full flex justify-center items-center bg-gradient-to-br from-primary from-10% via-[] via-70% to-[#221C5B] to-90% min-h-[60vh] md:min-h-[calc(100vh-252px)] lg:min-h-[calc(100vh-256px)]'
+      className='-mt-[76px] w-full flex justify-center items-center bg-gradient-to-br from-primary from-10% via-[] via-70% to-[#221C5B] to-90% min-h-[60vh] md:min-h-[calc(100vh-176px)] lg:min-h-[calc(100vh-176px)]'
     >
       <div className="w-full flex flex-col md:flex-row justify-between items-center gap-10 px-6 md:px-20">
         <div className='w-full flex flex-col justify-center items-center md:justify-start md:items-start'>

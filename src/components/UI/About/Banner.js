@@ -3,22 +3,22 @@ import { aboutUs } from '@/assets';
 
 const Banner = () => {
   return (
-    <section>
+    <section className='-mt-[76px]'>
       <div
-        className='w-full bg-[#F7F7FC] max-w-[1440px] mx-auto min-h-[700px] bg-gradient-to-br from-primary from-10% via-[] via-70% to-[#221C5B] to-100'
+        className='w-full max-w-[1440px] mx-auto min-h-[720px] bg-gradient-to-br from-primary from-10% via-[] via-70% to-[#221C5B] to-100'
       >
-        <div className="w-11/12 md:w-3/4 mx-auto text-center pt-10">
+        <div className="pt-28 w-11/12 md:w-3/4 mx-auto text-center">
           <h1 className="text-4xl md:text-[56px] text-white font-semibold leading-[3rem] md:leading-[5rem]">
             Innovating the future.
           </h1>
           <h2 className="text-4xl md:text-[56px] text-white font-semibold leading-[3rem] md:leading-[5rem]">
             Where imagination meets creation
           </h2>
-          <p className="w-3/4 lg:w-2/4 mx-auto mt-6 text-gray text-center leading-8">
+          <p className="md:w-3/4 lg:w-2/4 mx-auto mt-6 text-gray text-center leading-8">
             Our mission is to empower creators with groundbreaking tools that unlock their creative potential, enabling them to turn their boldest ideas into reality.
           </p>
 
-          <div className=' md:w-4/6 lg:w-2/5 grid grid-cols-2 mx-auto lg:mx-0 lg:ml-auto gap-8 mt-10 lg:mt-28'>
+          <div className='md:w-4/6 lg:w-2/5 grid grid-cols-2 mx-auto lg:mx-0 lg:ml-auto gap-8 mt-8 lg:mt-28'>
             <div className='flex flex-col items-start'>
               <span className="font-extrabold text-2xl text-white">2020</span>
               <span className="text-sm text-gray font-medium leading-7">
@@ -46,7 +46,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <Image className='-mt-10 mx-auto px-6 md:px-0 lg:-mt-72 lg:ml-16' draggable={false} alt='about-us' src={aboutUs.src} width={600} height={430} />
+      <Image className='-mt-10 mx-auto px-6 md:px-0 lg:-mt-60 lg:ml-16' draggable={false} alt='about-us' src={aboutUs.src} width={600} height={430} />
     </section>
   );
 };

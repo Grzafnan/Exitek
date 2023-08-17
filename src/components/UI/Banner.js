@@ -4,11 +4,11 @@ const Banner = () => {
   return (
     <section
       // min-h-[calc(100vh-80px)]
-      className={`bg-cover bg-center w-full 
+      className={`-mt-[76px] bg-cover bg-center w-full 
       min-h-screen`}
       style={{ backgroundImage: `url(${banner?.src})` }}
     >
-      <div className="w-3/4 mx-auto text-center pt-10">
+      <div className="w-3/4 mx-auto text-center pt-[96px]">
         <h1 className="text-4xl md:text-[56px] text-white font-semibold leading-[3rem] md:leading-[5rem]">
           Empowering Creativity and Beauty
         </h1>

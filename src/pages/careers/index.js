@@ -4,7 +4,7 @@ import OpenPositions from "@/components/UI/Careers/OpenPositions";
 
 const index = () => {
   return (
-    <div className="w-full max-w-[1440px] mx-auto ">
+    <div className="">
       <Banner />
       <Offers />
       <OpenPositions />

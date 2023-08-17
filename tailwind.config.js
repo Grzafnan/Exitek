@@ -15,6 +15,13 @@ module.exports = {
         'gray': "#999AA3",
         'border-bg': "#DFDFE8"
       },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'epilogue': ['Epilogue', 'sans-serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'preahvihear': ['Preahvihear', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
