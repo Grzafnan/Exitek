@@ -1,7 +1,7 @@
 import BackIcon from "@/components/icons/BackIcon";
 import Link from "next/link";
 
-const Banner = () => {
+const Banner = ({ title }) => {
   return (
     <section
       className='-mt-[76px] w-full min-h-[360px]'
@@ -11,8 +11,8 @@ const Banner = () => {
         <Link href='/careers' >
           <BackIcon />
         </Link>
-        <h1 className="text-3xl md:text-[56px] text-white font-semibold leading-[3rem] md:leading-[5rem]">
-          Junior ios Developer
+        <h1 className="md:ml-3 text-3xl md:text-[56px] text-white font-semibold leading-[3rem] md:leading-[5rem]">
+          {title}
         </h1>
       </div>
     </section>

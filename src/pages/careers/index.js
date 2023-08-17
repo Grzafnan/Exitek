@@ -5,7 +5,7 @@ import Offers from "@/components/UI/Careers/Offers";
 import OpenPositions from "@/components/UI/Careers/OpenPositions";
 import Head from "next/head";
 
-const Careers = () => {
+const Careers = ({ jobs }) => {
   return (
     <>
       <DynamicHead
@@ -14,7 +14,7 @@ const Careers = () => {
       />
       <Banner />
       <Offers />
-      <OpenPositions />
+      <OpenPositions jobs={jobs} />
     </>
   );
 };
@@ -24,3 +24,15 @@ export default Careers;
 Careers.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>
 };
+
+
+export const getServerSideProps = async () => {
+  const res = await fetch(`${process.env.CLIENT_URL}/api/jobs?collection=jobs`);
+  const data = await res.json();
+  return {
+    props: {
+      jobs: data.data
+    },
+    // revalidate: 10
+  }
+}

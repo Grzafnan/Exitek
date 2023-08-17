@@ -9,7 +9,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="w-full mb-20">
+    <section className="w-full pb-20">
       <div className="w-11/12 lg:w-3/4 mx-auto bg-white py-10 px-6 md:px-10 lg:px-20 rounded-[32px] shadow-2xl">
         <h1 className="text-4xl md:text-[56px] text-primary text-center font-semibold leading-[3rem] md:leading-[5rem]">
           Join the team
