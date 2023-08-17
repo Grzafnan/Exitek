@@ -1,8 +1,13 @@
 import ErrorMan from '@/components/icons/ErrorMan';
 import Link from 'next/link';
-import React from 'react';
+import { useRouter } from 'next/router';
 
 const NotFound = () => {
+  const router = useRouter();
+  setTimeout(() => {
+    router.push("/")
+  }, 3000);
+
   return (
     <div className="grid h-screen px-4 bg-white place-content-center">
       <div className="text-center">

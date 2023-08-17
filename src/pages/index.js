@@ -1,20 +1,23 @@
+import DynamicHead from '@/components/DynamicHead'
 import RootLayout from '@/components/Layouts/RootLayout'
 import Banner from '@/components/UI/Banner'
 import JoinTeam from '@/components/UI/JoinTeam/JoinTeam'
 import Showcases from '@/components/UI/Showcases/Showcases'
 import Stats from '@/components/UI/Stats'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className=''>
+    <>
+      <DynamicHead
+        title="Home - Exitek"
+        description="This is official website of Exitek"
+      />
       <Banner />
       <Stats />
       <Showcases />
       <JoinTeam />
-    </div>
+    </>
   )
 };
 
